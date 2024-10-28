@@ -26,7 +26,7 @@ export default function TodoApp() {
     if (!newTodo.trim()) return;
 
     try {
-      const response = await fetch('http://localhost:8080/api/todos', {
+      const response = await fetch('http://localhost:8080/api/todos/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
